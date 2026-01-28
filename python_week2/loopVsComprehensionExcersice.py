@@ -45,3 +45,23 @@ names = ["alice", "bob", "carol", "dave", "eve"]
 long_names = [name for name in names if len(name) > 4]
 print(long_names)
 
+# Student grades: [student] [subjects]
+# columns: Math, English, Science
+
+grades= [
+    [95, 87, 92],
+    [88, 90, 85],
+    [92, 88, 94],
+    [78, 85, 80]
+]
+
+print(grades[0][0])
+print(grades[1][2])
+
+print(grades[0])  # First student's grades
+
+for student_grades in grades:
+    avg = sum(student_grades) / len(student_grades)
+    print(f"Average: {avg:.1f}")
+    
+avgs = [sum(row)/len(row) for row in grades]
