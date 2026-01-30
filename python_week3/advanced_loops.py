@@ -56,9 +56,23 @@
 #     print(i)
 #     i += 1
 
-age = -1
-while age < 0 or age > 120:
-    age = int(input("Please enter your age (0-120): "))
-    if age < 0 or age > 120:
-        print("Invalid age. Try again.")
-print(f"Your age is: {age}")
+# age = -1
+# while age < 0 or age > 120:
+#     age = int(input("Please enter your age (0-120): "))
+#     if age < 0 or age > 120:
+#         print("Invalid age. Try again.")
+# print(f"Your age is: {age}")
+
+# for num in range(1, 1000):
+#     if num % 7 == 0 and num % 11 != 0:
+#         print(f'found it: {num}')
+#         break
+
+numbers = [5, -3, 8, -1, 12, -7, 0, 20]
+for num in numbers:
+    if num < 0:
+        continue
+    
+    squared = num ** 2
+    print(f"{num} Squared : {squared}")
+        
