@@ -78,8 +78,8 @@
 # if data:
 #     print("Also has data")
 
-a, b = 10, 15
-max_value = a if a > b else b
-print(f'Max value is {max_value}')
+# a, b = 10, 15
+# max_value = a if a > b else b
+# print(f'Max value is {max_value}')
     
     
